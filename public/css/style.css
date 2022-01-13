@@ -1,35 +1,49 @@
+@charset "UTF-8";
 #logo {
-  align-items: center;
-  display: flex;
-  font-weight: normal;
-  justify-content: space-between;
-  padding: 0 20px;
+  position: relative;
 }
-#logo #photo_de_couverture {
+
+#logo img {
+  height: 30px;
+}
+
+#photo_de_couverture img {
   max-width: 100%;
   max-height: 32rem;
   width: 100%;
   object-fit: cover;
 }
-#logo h2 {
+
+#photo_de_couverture figcaption {
+  height: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h2 {
   font-family: Shrikhand;
 }
 
-body {
-  background: red;
+#entrées {
+  width: 80%;
+  height: 20px;
+}
+
+.footer__title {
+  font-family: police_logo_titre;
+  font-weight: 400;
+  margin-bottom: 1.063rem;
+  color: #fff;
+  font-size: 1.063rem;
 }
 
 footer {
-  background: grey;
+  background-color: gray;
 }
 
-#footer-link {
-  font-family: Shrikhand;
-  size: 14rem;
+.footer__list {
+  list-style: none;
   color: white;
-  text-decoration: none;
-  flex-direction: column;
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

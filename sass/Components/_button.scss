@@ -1,0 +1,15 @@
+#entrées button{
+    width: 80%;
+    height: 20px;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    flex-direction: column;
+    background-color: white;
+}
+#entrées{
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative
+}

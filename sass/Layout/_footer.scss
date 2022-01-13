@@ -1,15 +1,14 @@
+.footer__title {
+    font-family: police_logo_titre;
+    font-weight: 400;
+    margin-bottom: 1.063rem;
+    color: #fff;
+    font-size: 1.063rem;
+}
 footer{
-    background: grey;
-
+    background-color: gray;
 }
-
-#footer-link{
-    font-family: $police_logo_titre;
-    size: 14rem;
-    color: white;
-    text-decoration: none;
-    flex-direction: column;
-   
-    width: 100%;
+.footer__list{
+   list-style: none;
+    color:white;
 }
-

@@ -1,21 +1,25 @@
-#logo {
-    align-items: center;
-    display: flex;
-    font-weight: normal;
-    justify-content: space-between;
-    padding: 0 20px;
+#logo  {
+position: relative;
+
+}
+#logo img {
+    height: 30px;
+}
+
      
-#photo_de_couverture{
+#photo_de_couverture img {
     max-width: 100%;
     max-height: 32rem;
     width: 100%;
     object-fit: cover;
-}  
+  }
+  #photo_de_couverture figcaption{
+      height: 20px;
+      border-top-left-radius:10px ;
+      border-top-right-radius:10px ;
+  }
     h2 {
         font-family: $police_logo_titre;
         }
-}
 
-body{
-    background: red;
-}
+
