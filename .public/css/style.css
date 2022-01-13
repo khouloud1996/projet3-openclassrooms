@@ -1,0 +1,29 @@
+#logo {
+  align-items: center;
+  display: flex;
+  font-weight: normal;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#logo #photo_de_couverture {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
+}
+#logo h2 {
+  font-family: Shrikhand;
+}
+
+footer {
+  background: grey;
+}
+
+#footer-link {
+  font-family: Shrikhand;
+  size: 14rem;
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
