@@ -1,7 +1,28 @@
 body{
     background-color: whitesmoke;
-   
+   font-family: police_texte;
+}
+    
+
+img{
+    width: 90%;
+    height: 40px;
 }
 .localisation{
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(206, 198, 198);
+}
+#search{
+    background-color: rgb(233, 231, 231);
+}
+.function-content{
+    border-radius: 20px;
+    box-shadow: 4px;
+}
+.function-box{
+    display: flex;
+    align-items: flex-start;
+}
+.function-content_number{
+    border-radius: 30px;
+    color: color_secondaire ;
 }
