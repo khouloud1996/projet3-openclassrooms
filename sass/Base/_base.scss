@@ -9,15 +9,82 @@ body{
 #restaurant{
     background-color: rgb(247, 234, 234);
 }
+.image {
+    width: 100%;
+    height: 17.188rem;
+    object-fit: cover;}
+    .titre_menu{
+        font-family: $police_logo_titre;
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+
+    #photo_de_couverture figcaption{
+        position: relative;
+        margin-top: -3.688rem;
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 2.5rem;
+        padding: 1.938rem 0 1.25rem;
+        background-color: #f6f6f6;
+
+        }
+        .sous_titre{
+            position: relative;
+            margin-bottom: .875rem;
+            padding: 0 1.25rem .5rem;
+            color: #696969;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .item {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            box-shadow: 0 .313rem .438rem rgba(0, 0, 0, .15);
+            margin: 0 .813rem .938rem;
+            border-radius: .938rem;
+            background-color: #fff;}
+
+            .item__title {
+                margin-bottom: .313rem;
+                font-size: 1.125rem;
+                font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        
+            .item__garnish {
+                font-size: .9rem;
+                font-weight: 300;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        
+            .item__price {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding: .75rem 1.07rem;
+                font-size: .938rem;
+                font-weight: 700;
+            }
     
 
 img{
     width: 90%;
     height: 60px;
 }
+
 .localisation{
     background-color: rgb(206, 198, 198);
     padding-bottom: 0rem;
+    display: flex;
+   
+    justify-content: center;
+
 }
 #search{
     background-color: rgb(233, 231, 231);
@@ -30,9 +97,10 @@ font-family: $police_texte;
 .function-content{
     background-color:rgb(231, 229, 226);   
     width: 80%; 
+    height: 40px;
 
     border-radius: 15px;
-     padding: 0;
+     padding-top: 20px;
      margin-bottom: 5px;
      margin-top: 20px;
    
@@ -59,9 +127,10 @@ font-family: $police_texte;
 .restaurant-content_promo{
     display: flex;
     flex-direction:row-reverse;
-    background-color: rgb(120, 199, 120);
+    background-color: rgb(167, 228, 167);
     font-size: 10px;
-    width: 35px;
+    width: 40px;
+    height: 15px;
 }
 
 .restaurant-content_link img
@@ -116,7 +185,3 @@ box-shadow: 2px 2px 2px rgb(184, 178, 178);
         box-shadow: 3px 3px 3px rgb(214, 214, 214);
     }
     
-
-
-
-
