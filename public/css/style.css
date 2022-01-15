@@ -100,18 +100,23 @@ img {
 }
 
 .function-content {
-  background-color: #e7e5e2;
-  width: 80%;
-  height: 40px;
-  border-radius: 15px;
-  padding-top: 20px;
-  margin-bottom: 5px;
-  margin-top: 20px;
-  border-bottom: 0;
-  box-shadow: 3px 3px 3px #d6d6d6;
+  position: relative;
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 0.313rem 0.438rem rgba(0, 0, 0, 0.15);
+  margin: 0 0.813rem 0.938rem;
+  border-radius: 0.938rem;
+  height: 3rem;
+  background-color: #fff;
+}
+
+.sous_titre_2 {
+  position: relative;
+  margin-bottom: 0.875rem;
+  padding: 0 1.25rem 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .function-content_number {
@@ -152,7 +157,6 @@ img {
 }
 
 .restaurant-content_link figcaption {
-  background-color: white;
   color: black;
   font-family: Roboto;
   border-radius: 13px;

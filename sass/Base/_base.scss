@@ -95,21 +95,25 @@ font-family: $police_texte;
 
 }
 .function-content{
-    background-color:rgb(231, 229, 226);   
-    width: 80%; 
-    height: 40px;
-
-    border-radius: 15px;
-     padding-top: 20px;
-     margin-bottom: 5px;
-     margin-top: 20px;
-   
-      border-bottom:0 ;
-    box-shadow: 3px 3px 3px rgb(214, 214, 214);
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-}
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 .313rem .438rem rgba(0, 0, 0, .15);
+    margin: 0 .813rem .938rem;
+    border-radius: .938rem;
+    height: 3rem;
+    background-color: #fff;}
+    .sous_titre_2{
+        position: relative;
+        margin-bottom: .875rem;
+        padding: 0 1.25rem .5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        
+    }
+
+
 
 .function-content_number{
     border-radius: 30px 30px;
@@ -151,7 +155,7 @@ height: 80%;
 box-shadow: 2px 2px 2px rgb(184, 178, 178);
 }
 .restaurant-content_link figcaption{
-    background-color:white;
+
     color: black;
     font-family: $police_texte;
     border-radius: 13px;
