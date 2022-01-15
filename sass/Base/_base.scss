@@ -6,6 +6,9 @@ body{
 
     font-family: $police_texte;
 }
+#restaurant{
+    background-color: rgb(247, 234, 234);
+}
     
 
 img{
@@ -24,26 +27,47 @@ img{
 font-family: $police_texte;
 
 }
+.function-content{
+    background-color:rgb(231, 229, 226);   
+    width: 80%; 
+
+    border-radius: 15px;
+     padding: 0;
+     margin-bottom: 5px;
+     margin-top: 20px;
+   
+      border-bottom:0 ;
+    box-shadow: 3px 3px 3px rgb(214, 214, 214);
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
 .function-content_number{
     border-radius: 30px 30px;
     border-color: $color_primaire;
     background-color: $color_primaire ;
-    margin-top: 5px;
+ 
     margin-bottom: 0px;
     padding-right: 0px;
     height: 20px;
     width: 20px;
     color: white;
+
+
 }
-.function-content-box{
+.restaurant-content_promo{
     display: flex;
-    justify-content: space-between;
-    border: 20px 20px;
+    flex-direction:row-reverse;
+    background-color: rgb(120, 199, 120);
+    font-size: 10px;
+    width: 35px;
 }
+
 .restaurant-content_link img
 {
-    width: 25%;
-    height: 100%;
+    width: 100%;
+    height: 80%;
     object-fit: cover;
     margin:0;
     padding: 0;
@@ -52,12 +76,8 @@ font-family: $police_texte;
 }
 .restaurant-content_link figure{
 background-color:rgb(228, 224, 228);
-border: thin whitesmoke;
+
  border-radius: 15px;
-margin-left: 1.5%;
-margin-bottom: 10px;
-margin-right:1.5% ;
-display: flex;
 height: 80%;
 box-shadow: 2px 2px 2px rgb(184, 178, 178);
 }
@@ -67,6 +87,7 @@ box-shadow: 2px 2px 2px rgb(184, 178, 178);
     font-family: $police_texte;
     border-radius: 13px;
     height: 20%;
+    width: 100%;
     
     padding-left:15px;
     padding-top: 2px;
@@ -82,6 +103,18 @@ box-shadow: 2px 2px 2px rgb(184, 178, 178);
     margin-bottom: 3px;
     color: black;
 }
+    .restaurant-content{
+        background-color:rgb(228, 224, 228);
+        
+        
+        width: 80%; 
+ 
+        border-radius: 15px;
+         padding: 0;
+       
+          border-bottom:0 ;
+        box-shadow: 3px 3px 3px rgb(214, 214, 214);
+    }
     
 
 
