@@ -14,13 +14,14 @@ font-size: 3rem;}
 .searchBox{
     background-color: #EAEAEA;
     padding-top: 0rem;
-    padding-left: 1rem;
-
-justify-content: center;
+    padding-left: 1rem;}
+ 
 .searchBox h2, p {
     font-family: $police_texte;
+ display: flex;
+ justify-content: center;
 }
-}
+
 .searchBox-title{
 font-family: $police_texte;
 

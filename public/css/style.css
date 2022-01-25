@@ -297,10 +297,12 @@ img {
   background-color: #EAEAEA;
   padding-top: 0rem;
   padding-left: 1rem;
-  justify-content: center;
 }
-.searchBox .searchBox h2, .searchBox p {
+
+.searchBox h2, p {
   font-family: Roboto;
+  display: flex;
+  justify-content: center;
 }
 
 .searchBox-title {
