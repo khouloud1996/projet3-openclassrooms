@@ -1,13 +1,18 @@
-body{
-    background-color: whitesmoke;
-    width: 100%;
+ html{
+     max-width: 720px;
+ }
+ body {
+        margin: 0 auto;
+       
+        padding: 0;
+        background-color: #F6F6F6;
 }
 .bloc_page{
 
     font-family: $police_texte;
 }
 #restaurant{
-    background-color: rgb(247, 234, 234);
+    background-color: #F6F6F6 ;
 }
 .photo_de_couverture{
     margin: 0rem;
@@ -84,23 +89,24 @@ img{
     height: 60px;
 }
 
-.localisation{
-    background-color: rgb(206, 198, 198);
-    padding-bottom: 0rem;
-    display: flex;
-   
-    justify-content: center;
 
-}
-#search{
-    background-color: rgb(233, 231, 231);
-    padding-top: 0rem;
-    padding-left: 1rem;
-}
-.searchBox-title{
-font-family: $police_texte;
 
+.function a {
+    text-decoration: none;
+    color: black;
+
+
+    
 }
+.section_menu_list_link i {
+    color: rgb(102, 97, 97)
+    
+}
+
+.zone_icon{
+    padding-right:15px;
+}
+
 .function-content{
     position: relative;
     display: flex;
@@ -122,6 +128,7 @@ font-family: $police_texte;
         font-size: 1rem;
         font-weight: bold;
         padding-top: 2rem;
+        font-family: $police_texte;
         
     }
 
@@ -130,83 +137,122 @@ font-family: $police_texte;
     margin-right: 0;
 }
 
-.function-content_number{
-    border-radius: 30px 30px;
-    border-color: $color_primaire;
-    background-color: $color_primaire ;
- 
-    margin-bottom: 0px;
-    padding-right: 0px;
-    height: 20px;
-    width: 20px;
-    color: white;
 
-
-}
-.restaurant-content_promo{
-    display: flex;
-    flex-direction:row-reverse;
-    background-color: rgb(167, 228, 167);
-    font-size: 10px;
-    width: 40px;
-    height: 15px;
-}
-
-.restaurant-content_link img
-{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    margin:0;
-    padding: 0;
-    border-top-left-radius: 15px;
-    border-top-right-radius:  15px;
-}
-.restaurant-content_link figure{
-background-color:rgb(228, 224, 228);
-
- border-radius: 15px;
-height: 80%;
-box-shadow: 2px 2px 2px rgb(184, 178, 178);
-}
-.restaurant-content_link figcaption{
-
-    color: black;
-    font-family: $police_texte;
-    border-radius: 13px;
-    height: 20%;
-    width: 100%;
-    
-    padding-left:1rem;
-    padding-top: 2px;
-    border:whitesmoke;
-    margin: 0;
-}
-.figcaption{
-    padding-left: 1rem;
-}
-
-.restaurant-content a {
+.section_menu_list_link {
     text-decoration: none;
+    position: relative;
+    display: flex;
+    padding: 1.5rem;
+    margin: 1.5rem ;
+    background-color: #F6F6F6;
+    border-radius: 1rem;
+    box-shadow: 5px 4px 10px 4px rgba(91, 91, 91, 0.39);
+    align-items: center;
 
 }
-.restaurant-content h4,p{
+.section_menu_list_link span {
+    position: absolute;
+    left: -0.7rem;
+    padding: 0.2rem 0.4rem;
+    background-color: #9356DC;
+    color: #FFFFFF;
+    border-radius: 100%;
+  }
+  .section_menu_list_link i {
+    margin: 0 1rem;
+    color: #c2bebe;
+  }
+  .section_menu_list_link p {
+    margin: 0;
+    font-weight: bold;
+    font-family: $police_texte;
+  }
+
+ 
+
+.restaurant_list_card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 5px 4px 10px 4px rgba(91, 91, 91, 0.39);
+    object-fit: cover;
+    margin: 1rem;
+    position: relative;
+ 
+    
+  }
+  
+  .restaurant_list_card p, h3{
+      font-family: $police_texte;
+  }
+  .restaurant_list_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .new {
+    position: absolute;
+    background-color: #99e2d0;
+    padding: 0.3rem 0.5rem;
+    color: #189576;
+    top: 0;
+    right: 10px;
+  }
+  .restaurant_list_card_info {
+    margin: 1rem 0 1rem 1rem;
+    position: relative;
+    padding-bottom: 1rem;
+ 
+  }
+  .restaurant_list_card_info h3 {
+    margin: 0;
+    font-weight: bold;
+  }
+  .restaurant_list_card_info p {
+    margin: 0.3rem 0 0 0;
+    font-weight: lighter;
+  }
+  .restaurant_list_card_info i {
+    position: absolute;
+    padding: 0.3rem 0.5rem;
+    top: 0;
+    right: 10px;
+    font-size: 1rem;
+  }
+  .restaurant_list_card a{
+        text-decoration: none;
+        color: black;
+  }
+
+
+.restaurant_list  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "card-1" "card-2" "card-3" "card-4";  
+}
+
+#list-card-1 {
+    grid-area: card-1;
+  }
+  
+  #list-card-2 {
+    grid-area: card-2;
+  }
+  
+  #list-card-3 {
+    grid-area: card-3;
+  }
+  
+  #list-card-4 {
+    grid-area: card-4;
+  }
+
+.restaurant_list_card_info{
     margin-top: 3px;
     margin-bottom: 3px;
     color: black;
 }
-    .restaurant-content{
-        background-color:rgb(228, 224, 228);
-        
-        
-        width: 90%; 
- 
-        border-radius: 15px;
-         padding :0;
-         margin-left: 1rem;
-         margin-right: 1.5rem;
-       
-          border-bottom:0 ;
-        box-shadow: 3px 3px 3px rgb(214, 214, 214);
-    }
+
     

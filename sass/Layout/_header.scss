@@ -1,7 +1,43 @@
-
+.logo{
+    background-color: #f6f6f6;
+}
 .img_logo{
-
+text-decoration: none;
+color: black;
 display: flex;
 justify-content: center;
 font-family:$police_logo_titre;
 font-size: 3rem;}
+#acceuil{
+    background-color:#EAEAEA ;
+}
+.searchBox{
+    background-color: #EAEAEA;
+    padding-top: 0rem;
+    padding-left: 1rem;
+
+justify-content: center;
+.searchBox h2, p {
+    font-family: $police_texte;
+}
+}
+.searchBox-title{
+font-family: $police_texte;
+
+
+}
+.search-input{
+    margin: 0 0 0 1rem;
+    border: none;
+    background-color:#dfdede;
+
+}
+.city_search{
+    background-color:  #dfdede;
+    padding-bottom: 0rem;
+    display: flex;
+    padding: 0.5rem;
+   
+    justify-content: center;
+
+}
