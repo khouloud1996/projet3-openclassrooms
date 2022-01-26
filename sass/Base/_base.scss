@@ -1,7 +1,5 @@
 // version mobile //
-html{
-     max-width: 720px;
- }
+
  body {
         margin: 0 auto;
        
@@ -268,6 +266,9 @@ img{
 .restaurant_list{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
    
 }
+
 }

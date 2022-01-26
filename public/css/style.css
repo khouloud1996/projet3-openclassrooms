@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-html {
-  max-width: 720px;
-}
-
 body {
   margin: 0 auto;
   padding: 0;
@@ -270,6 +266,7 @@ img {
   .restaurant_list {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .searchBox-button {
@@ -311,7 +308,14 @@ img {
   padding-left: 1rem;
 }
 
-.searchBox h2, p {
+.searchBox h2 {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.searchBox p {
   font-family: Roboto;
   display: flex;
   flex-direction: row;
