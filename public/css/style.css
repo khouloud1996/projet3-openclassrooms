@@ -260,6 +260,18 @@ img {
   color: black;
 }
 
+@media screen and (min-width: 700px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .restaurant_list {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .searchBox-button {
   border-radius: 8rem;
   color: white;
@@ -302,6 +314,7 @@ img {
 .searchBox h2, p {
   font-family: Roboto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
