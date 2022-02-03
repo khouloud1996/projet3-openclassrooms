@@ -17,7 +17,11 @@ font-size: 3rem;}
     
     background-color: #EAEAEA;
     padding-top: 0rem;
-    padding-left: 1rem;}
+    padding-left: 1rem;
+  
+        display: flex;
+        justify-content: space-around;
+        align-items: center;}
  
 .searchBox h2 {
     font-family: $police_texte;
