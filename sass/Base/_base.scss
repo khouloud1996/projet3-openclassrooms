@@ -4,43 +4,20 @@
         margin: 0 auto;
        
         padding: 0;
-        background-color: #F6F6F6;
+        background-color: $color_font;
 }
 .bloc_page{
 
     font-family: $police_texte;
 }
 #restaurant{
-    background-color: #F6F6F6 ;
+    background-color: $color_font ;
 }
-.photo_de_couverture{
-    margin: 0rem;
-}
-.image {
-    width: 100%;
-    height: 17.188rem;
-    object-fit: cover;}
-    .titre_menu{
-        font-family: $police_logo_titre;
-        margin-left: 2rem;
-        margin-top: 0;
-        font-size: 1.75rem;
-        font-weight: 400;
-    }
 
-    #photo_de_couverture figcaption{
-        position: relative;
-        margin-top: -3.688rem;
-        border-top-left-radius: 2.5rem;
-        border-top-right-radius: 2.5rem;
-        padding: 1.938rem 0 1.25rem;
-        background-color: #f6f6f6;
-
-        }
         .sous_titre{
-            position: relative;
-            margin-bottom: .875rem;
-            padding: 0 1.25rem .5rem;
+          position: relative;
+          margin-bottom: .875rem;
+          padding: 0 1.25rem .5rem;
             color: #696969;
             font-size: 1rem;
             font-weight: 400;
@@ -88,7 +65,10 @@ img{
     height: 60px;
 }
 
-
+.sous_titre{
+  border-bottom: 2px solid $color_teritiaire;
+ 
+}
 
 .function a {
     text-decoration: none;
@@ -147,13 +127,14 @@ img{
     border-radius: 1rem;
     box-shadow: 5px 4px 10px 4px rgba(91, 91, 91, 0.39);
     align-items: center;
+  
 
 }
 .section_menu_list_link span {
     position: absolute;
     left: -0.7rem;
     padding: 0.2rem 0.4rem;
-    background-color: #9356DC;
+    background-color: $color_primaire;
     color: #FFFFFF;
     border-radius: 100%;
   }
@@ -192,7 +173,7 @@ img{
   }
   .new {
     position: absolute;
-    background-color: #99e2d0;
+    background-color:  $color_teritiaire;
     padding: 0.3rem 0.5rem;
     color: #189576;
     top: 0;
@@ -253,22 +234,45 @@ img{
     margin-bottom: 3px;
     color: black;
 }
-// version laptob //
+// version laptob -- page_acceuil //
 @media screen and (min-width: 700px){
 
-.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  
-
+.searchBox{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .restaurant_list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+   margin: 5rem;
+}
+.carte{
+display: flex;
+align-items: center;
+width: 100%;
 
-   
 }
 
+
+
+}
+
+
+ 
+
+// VERSION TABLETTE // 
+@media screen and (min-width: 701px) and (max-width:1025px){
+
+  .searchBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+    .menu{
+      display: flex;
+      justify-content: space-around;
+    }
+    .restaurant_list{
+      display: grid;
+      grid: repeat( 260px) / auto-flow 600px;
+
+    }
 }

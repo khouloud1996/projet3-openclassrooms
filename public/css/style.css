@@ -14,33 +14,6 @@ body {
   background-color: #F6F6F6;
 }
 
-.photo_de_couverture {
-  margin: 0rem;
-}
-
-.image {
-  width: 100%;
-  height: 17.188rem;
-  object-fit: cover;
-}
-
-.titre_menu {
-  font-family: "shrikhand", sans-serif;
-  margin-left: 2rem;
-  margin-top: 0;
-  font-size: 1.75rem;
-  font-weight: 400;
-}
-
-#photo_de_couverture figcaption {
-  position: relative;
-  margin-top: -3.688rem;
-  border-top-left-radius: 2.5rem;
-  border-top-right-radius: 2.5rem;
-  padding: 1.938rem 0 1.25rem;
-  background-color: #f6f6f6;
-}
-
 .sous_titre {
   position: relative;
   margin-bottom: 0.875rem;
@@ -91,6 +64,10 @@ body {
 img {
   width: 90%;
   height: 60px;
+}
+
+.sous_titre {
+  border-bottom: 2px solid #99E2D0;
 }
 
 .function a {
@@ -191,7 +168,7 @@ img {
 
 .new {
   position: absolute;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   padding: 0.3rem 0.5rem;
   color: #189576;
   top: 0;
@@ -257,16 +234,37 @@ img {
 }
 
 @media screen and (min-width: 700px) {
+  .searchBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .restaurant_list {
+    margin: 5rem;
+  }
+
+  .carte {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1025px) {
+  .searchBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .menu {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
   }
 
   .restaurant_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid: repeat(260px)/auto-flow 600px;
   }
 }
 .searchBox-button {
@@ -286,7 +284,7 @@ img {
 }
 
 .logo {
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
 
 .img_logo {
@@ -313,13 +311,12 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 }
 
 .searchBox p {
   font-family: Roboto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  text-align: center;
 }
 
 .searchBox-title {
@@ -338,6 +335,42 @@ img {
   display: flex;
   padding: 0.5rem;
   justify-content: center;
+  border-top: 2px solid #cecece;
+}
+
+.photo_de_couverture {
+  margin: 0rem;
+}
+
+.image {
+  width: 100%;
+  height: 17.188rem;
+  object-fit: cover;
+}
+
+.titre_menu {
+  font-family: "shrikhand", sans-serif;
+  margin-left: 2rem;
+  margin-top: 0;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+#photo_de_couverture figcaption {
+  position: relative;
+  margin-top: -3.688rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  padding: 1.938rem 0 1.25rem;
+  background-color: #F6F6F6;
+}
+
+#photo_de_couverture i {
+  position: absolute;
+  padding: 0.3rem 0.5rem;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .footer__title {
