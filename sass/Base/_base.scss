@@ -296,7 +296,15 @@ background: $color_teritiaire;
     display: block;
   }
   .carte{
-    display: flex;
+    display: block;
+  
+  }
+  .restaurant_list{
+    width: 50%;
   }
 }
-  
+    
+.fa-check{
+  color: #189576;
+
+}
