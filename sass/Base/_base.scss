@@ -59,6 +59,7 @@
                 text-overflow: ellipsis;
             
             }
+       
         
             .item__price {
                 display: flex;
@@ -301,6 +302,11 @@ background: $color_teritiaire;
   }
   .restaurant_list{
     width: 50%;
+  }
+ 
+  #plat{
+    display: flex;
+    align-items: flex-end;
   }
 }
     
