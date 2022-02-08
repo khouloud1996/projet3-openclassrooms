@@ -21,56 +21,11 @@
           
             font-size: 1rem;
         
-           
-       
-        }
-        .sous_titre h3{
-          margin-bottom: 0;
         
           color: $color_gris;
           
         }
-        .item {
-            position: relative;
-           align-items: baseline;
-            justify-content: space-between;
-            overflow: hidden;
-            padding-left: 1rem;
-            box-shadow: 0 .313rem .438rem rgba(0, 0, 0, .15);
-            margin: 0 .813rem .938rem;
-            border-radius: .938rem;
-            background-color: #fff;}
-
-            .item__title  {
-                margin-bottom: .313rem;
-                font-size: 1.125rem;
-                font-weight: 500;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-            
-        
-            .item__garnish {
-                font-size: .9rem;
-                font-weight: 300;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            
-            }
-       
-        
-            .item__price {
-                display: flex;
-                justify-content: flex-end;
-                align-items: flex-end;
-                padding: .75rem 1.07rem;
-                font-size: .938rem;
-                font-weight: 700;
-                margin-top: 0;
-                margin-bottom:0 ;
-            }
+     
     
 
 img{
@@ -251,6 +206,156 @@ background: $color_teritiaire;
   left: 1rem;
   bottom: -1px;
 }
+// tansformation icone check //
+
+
+.choise{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  position: relative;
+}
+.choix{
+  margin-left: 30px;
+  animation: slideup 2s forwards;
+  opacity: 0;
+}
+.choix:nth-child(2){
+  animation-delay: calc(2s/8);
+}
+.choix{
+  background-color: white;
+}
+.choix{
+  display: flex;
+  width: 30%;
+  margin: 1rem 0;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px #00000066;
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+  
+}
+.text{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+  font-size: smaller;
+}
+.text h2,.text p{
+  margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+  font-weight: bold;
+
+}
+i.fas.fa-check-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99E2D0;
+  color: white;
+  height: 70px;
+  width: 50px;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 20px;
+}
+.valide{
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  align-items: center;
+}
+.choix:hover .valide{
+  margin-right: -1rem;
+}
+.rotation {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.choix:hover .rotation{
+  transform: rotate(0);
+}
+@media screen and (max-width: 1366px) {
+  .choise{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .choix{
+      width: 90%;
+      background-color: white;
+  }
+
+}
+
+/*MEDIUM*/
+@media screen and (max-width: 800px){
+  .choise{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .choix{
+      width: 90%;
+      background-color: white;
+  }
+
+}
+
+/*SMALL*/
+@media screen and (max-width: 667px){
+  
+  .choise{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+ 
+  i.fas.fa-arrow-left {
+      font-size: x-large;
+      position: absolute;
+      left: 25px;
+  }
+
+  .choix{
+      width: 80%;
+      background-color: white;
+  }
+
+}
+
+@keyframes slideup{
+  0%{
+      transform: translateY(20px);
+      opacity: 0%;
+  }
+  100%{
+      transform: translateY(0px);
+      opacity: 100%;
+  }
+}
+
+
 
              // version mobile -- page_acceuil //
 
@@ -260,7 +365,7 @@ background: $color_teritiaire;
 
  
 }
-.item{
+.choise{
   display: flex;
 }
 
@@ -293,9 +398,7 @@ background: $color_teritiaire;
   
     justify-content: space-between;
   }
-  .menu{
-    display: block;
-  }
+ 
   .carte{
     display: block;
   
@@ -303,14 +406,9 @@ background: $color_teritiaire;
   .restaurant_list{
     width: 50%;
   }
- 
-  #plat{
-    display: flex;
-    align-items: flex-end;
-  }
+ #entrées{
+   display: block;
+ }
 }
     
-.fa-check{
-  color: #189576;
 
-}
