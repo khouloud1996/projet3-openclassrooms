@@ -59,7 +59,7 @@
   bottom: -10px;
   position: absolute;
   animation-name: spinner;
-  animation-duration: 600ms;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -590,6 +590,13 @@ i.fas.fa-check-circle {
   padding-bottom: 4rem;
 }
 
+.btn-primary {
+  size: 2rem;
+  color: #FF79DA;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
 .logo {
   background-color: #F6F6F6;
 }
@@ -611,9 +618,6 @@ i.fas.fa-check-circle {
   background-color: #EAEAEA;
   padding-top: 0rem;
   padding-left: 1rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .searchBox h2 {
@@ -631,19 +635,21 @@ i.fas.fa-check-circle {
 
 .searchBox-title {
   font-family: Roboto;
+  text-align: center;
 }
 
 .search-input {
   margin: 0 0 0 1rem;
   border: none;
   background-color: #dfdede;
+  align-items: center;
 }
 
 .city_search {
   background-color: #dfdede;
   padding-bottom: 0rem;
-  display: flex;
   padding: 0.5rem;
+  display: flex;
   justify-content: center;
   border-top: 2px solid #cecece;
 }

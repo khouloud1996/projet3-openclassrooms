@@ -1,3 +1,10 @@
+.btn-primary  {
+    size: 2rem;
+    color: $color_secondaire;
+    margin-left: 0.5rem;
+    text-decoration: none;
+}
+
 .logo{
     background-color:  $color_font;
 }
@@ -18,10 +25,9 @@ font-size: 3rem;}
     background-color: #EAEAEA;
     padding-top: 0rem;
     padding-left: 1rem;
-  
-        display: flex;
-        justify-content: space-around;
-        align-items: center;}
+
+     
+  }
  
 .searchBox h2 {
     font-family: $police_texte;
@@ -29,6 +35,7 @@ font-size: 3rem;}
     flex-direction: row;
     justify-content: center;
     text-align: center;
+
 }
 .searchBox p {
     font-family: $police_texte;
@@ -39,21 +46,22 @@ font-size: 3rem;}
 
 .searchBox-title{
 font-family: $police_texte;
-
+text-align: center;
 
 }
 .search-input{
     margin: 0 0 0 1rem;
     border: none;
     background-color:#dfdede;
-
+    
+align-items: center;
 }
 .city_search{
     background-color:  #dfdede;
     padding-bottom: 0rem;
-    display: flex;
+ 
     padding: 0.5rem;
-   
+   display: flex;
     justify-content: center;
     border-top: 2px solid rgb(206, 206, 206);
 
