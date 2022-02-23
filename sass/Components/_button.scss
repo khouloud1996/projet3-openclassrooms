@@ -2,17 +2,20 @@
 
     border-radius: 8rem;
     color: white;
-    background-color:$color_secondaire;
+    background: linear-gradient(#9356DC, #FF79DA);
     padding: 10px;
     border: none;
     box-shadow: 2px 2px 2px rgb(184, 178, 178);
+ padding-left: 2rem;
+ padding-right: 2rem;
     
     
 }
 #bouton{
     display: flex;
     justify-content: center;
-    margin: 3rem;
+    margin-top: 1rem;
    padding-bottom: 4rem;
+
 
 }

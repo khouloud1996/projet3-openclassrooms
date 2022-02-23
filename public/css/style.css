@@ -245,7 +245,6 @@ img {
   padding: 0 1.25rem 0.5rem;
   font-size: 1rem;
   font-weight: bold;
-  padding-top: 2rem;
   font-family: Roboto;
 }
 
@@ -260,10 +259,14 @@ img {
   display: flex;
   padding: 1.5rem;
   margin: 1.5rem;
-  background-color: #F6F6F6;
+  background-color: #faf7f1;
   border-radius: 1rem;
   box-shadow: 5px 4px 10px 4px rgba(91, 91, 91, 0.39);
   align-items: center;
+}
+
+.section_menu_list_link:hover {
+  background-color: white;
 }
 
 .section_menu_list_link span {
@@ -298,6 +301,7 @@ img {
 
 .restaurant_list_card p, h4 {
   font-family: Roboto;
+  margin-bottom: 0;
 }
 
 .restaurant_list_card img {
@@ -420,13 +424,22 @@ h3::after {
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
-  font-size: smaller;
+  font-size: 0.8rem;
 }
 
-.text h2, .text p {
+.text h2 {
   margin: 0px;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 1rem;
+}
+
+.text p {
+  margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 50;
+  font-size: 0.9rem;
 }
 
 .prix {
@@ -577,24 +590,26 @@ i.fas.fa-check-circle {
 .searchBox-button {
   border-radius: 8rem;
   color: white;
-  background-color: #FF79DA;
+  background: linear-gradient(#9356DC, #FF79DA);
   padding: 10px;
   border: none;
   box-shadow: 2px 2px 2px #b8b2b2;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 #bouton {
   display: flex;
   justify-content: center;
-  margin: 3rem;
+  margin-top: 1rem;
   padding-bottom: 4rem;
 }
 
 .btn-primary {
-  size: 2rem;
-  color: #FF79DA;
-  margin-left: 0.5rem;
   text-decoration: none;
+  margin-left: 4px;
+  margin-top: 5px;
+  font-weight: bold;
 }
 
 .logo {
@@ -606,8 +621,10 @@ i.fas.fa-check-circle {
   color: black;
   display: flex;
   justify-content: center;
+  margin-bottom: 3px;
+  margin-top: 2px;
   font-family: "shrikhand", sans-serif;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 #acceuil {
@@ -666,10 +683,11 @@ i.fas.fa-check-circle {
 
 .titre_menu {
   font-family: "shrikhand", sans-serif;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-top: 0;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 #photo_de_couverture figcaption {
@@ -689,6 +707,12 @@ i.fas.fa-check-circle {
   font-size: 1.5rem;
 }
 
+/*SMALL*/
+@media screen and (max-width: 667px) {
+  .img_logo {
+    font-size: 2rem;
+  }
+}
 .footer__title {
   font-family: "shrikhand", sans-serif;
   font-size: 17px;

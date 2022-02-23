@@ -22,7 +22,7 @@
           
         }
      
-    
+ 
 
 img{
     width: 90%;
@@ -56,17 +56,21 @@ img{
     height: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: #fff;}
+    background-color: #fff;
+}
+
+
     .sous_titre_2{
         position: relative;
         margin-bottom: .875rem;
         padding: 0 1.25rem .5rem;
         font-size: 1rem;
         font-weight: bold;
-        padding-top: 2rem;
+      
         font-family: $police_texte;
         
     }
+  
 
 .figure_images{
     margin-left: 0rem;
@@ -80,11 +84,14 @@ img{
     display: flex;
     padding: 1.5rem;
     margin: 1.5rem ;
-    background-color: $color_font;
+    background-color: rgb(250, 247, 241);
     border-radius: 1rem;
     box-shadow: 5px 4px 10px 4px rgba(91, 91, 91, 0.39);
     align-items: center;
-  
+}
+
+.section_menu_list_link:hover{
+  background-color: white;
 
 }
 .section_menu_list_link span {
@@ -121,6 +128,7 @@ img{
   
   .restaurant_list_card p, h4{
       font-family: $police_texte;
+      margin-bottom: 0;
   }
   .restaurant_list_card img {
     width: 100%;
@@ -244,13 +252,27 @@ background: $color_teritiaire;
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
-  font-size: smaller;
+  font-size: 0.8rem;
+
 }
-.text h2,.text p{
+.text h2{
   margin: 0px;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 1rem;
 }
+.text p{
+  margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ 
+  font-weight: 50;
+  font-size: 0.9rem;
+
+}
+
+
+
 .prix {
   display: flex;
   justify-content: flex-end;
