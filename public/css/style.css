@@ -605,6 +605,10 @@ i.fas.fa-check-circle {
   padding-bottom: 4rem;
 }
 
+.searchBox-button:hover {
+  background: linear-gradient(#a971ec, #f595da);
+}
+
 .btn-primary {
   text-decoration: none;
   margin-left: 4px;

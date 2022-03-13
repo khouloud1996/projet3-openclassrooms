@@ -4,10 +4,12 @@ file:///C:/Users/khoul/OneDrive/Bureau/appJS/PROJET3/la-note-enchantee.html
 file:///C:/Users/khoul/OneDrive/Bureau/appJS/PROJET3/a-la-francaise.html
 file:///C:/Users/khoul/OneDrive/Bureau/appJS/PROJET3/palette-du-gout.html
 file:///C:/Users/khoul/OneDrive/Bureau/appJS/PROJET3/le-delice-des-sens.html
-file:///C:/Users/khoul/OneDrive/Bureau/appJS/PROJET3/index.html#
+file:///C:/Users/khoul/OneDrive/Bureau/appJS/PROJET3/index.html
 
 
 MON GITHHUB
 
 
 https://github.com/khouloud1996/projet3-openclassrooms
+
+https://khouloud1996.github.io/projet3-openclassrooms/
